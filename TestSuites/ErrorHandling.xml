@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+<groups>
+<run>
+<include name="ErrorHandling"></include>
+</run>
+
+</groups>
+
+<listeners>
+
+<listener class-name="nishantSelenium.testComponents.Listeners"></listener>
+</listeners>
+
+
+  <test thread-count="5" name="SubmitOrderTest">
+    <classes>  
+      <class name="nishantSelenium.tests.SubmitOrderEcomTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+   <test thread-count="5" name="ErrorValidationTest">
+    <classes>
+      <class name="nishantSelenium.tests.ErrorCredentialValidationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
