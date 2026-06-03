@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,45 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,  1 skipped,  </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="nishantSelenium.tests.ErrorCredentialValidationTest" class="method navigator-link" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="nishantSelenium.tests.ErrorCredentialValidationTest" class="method navigator-link" hash-for-method="ProductErrorValidationCartPage">ProductErrorValidationCartPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="nishantSelenium.tests.SubmitOrderEcomTest" class="method navigator-link" hash-for-method="submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})">submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="nishantSelenium.tests.SubmitOrderEcomTest" class="method navigator-link" hash-for-method="orderHistoryTest">orderHistoryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="nishantSelenium.tests.SubmitOrderEcomTest" class="method navigator-link" hash-for-method="submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})">submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,9 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">nishantSelenium.tests.ErrorCredentialValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,15 +144,6 @@
                   <a name="LoginErrorValidation">
                   </a> <!-- LoginErrorValidation -->
                   <span class="method-name">LoginErrorValidation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-	at nishantSelenium.tests.ErrorCredentialValidationTest.LoginErrorValidation(ErrorCredentialValidationTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -169,85 +151,13 @@
                   <a name="ProductErrorValidationCartPage">
                   </a> <!-- ProductErrorValidationCartPage -->
                   <span class="method-name">ProductErrorValidationCartPage</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1270,26) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot;&gt; obscures it
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [6e4aa8a4-7b03-4454-aaf8-09b9af91fc4a, clickElement {id=2d534256-e099-4cd0-90a6-9017bd87015a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.4, moz:accessibilityChecks: false, moz:buildID: 20260212191108, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 25.3.0, moz:processID: 14837, moz:profile: /var/folders/s0/2wbyl1pn1dz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Element: [[FirefoxDriver: firefox on mac (6e4aa8a4-7b03-4454-aaf8-09b9af91fc4a)] -&gt; css selector: button[routerlink*=&apos;cart&apos;]]
-Session ID: 6e4aa8a4-7b03-4454-aaf8-09b9af91fc4a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at nishantSelenium.abstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:48)
-	at nishantSelenium.tests.ErrorCredentialValidationTest.ProductErrorValidationCartPage(ErrorCredentialValidationTest.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">nishantSelenium.tests.SubmitOrderEcomTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})">
-                  </a> <!-- submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com}) -->
-                  <span class="method-name">submitOrder</span>
-                  <span class="parameters">({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1270,26) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [25de4697-128b-403c-a77e-d58f7a771239, clickElement {id=3b108644-2fc3-465a-8e54-de14e12f2453}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.4, moz:accessibilityChecks: false, moz:buildID: 20260212191108, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 25.3.0, moz:processID: 14803, moz:profile: /var/folders/s0/2wbyl1pn1dz..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Element: [[FirefoxDriver: firefox on mac (25de4697-128b-403c-a77e-d58f7a771239)] -&gt; css selector: button[routerlink*=&apos;cart&apos;]]
-Session ID: 25de4697-128b-403c-a77e-d58f7a771239
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at nishantSelenium.abstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:48)
-	at nishantSelenium.tests.SubmitOrderEcomTest.submitOrder(SubmitOrderEcomTest.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">nishantSelenium.tests.SubmitOrderEcomTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -256,19 +166,18 @@ Session ID: 25de4697-128b-403c-a77e-d58f7a771239
                   <a name="orderHistoryTest">
                   </a> <!-- orderHistoryTest -->
                   <span class="method-name">orderHistoryTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method nishantSelenium.tests.SubmitOrderEcomTest.orderHistoryTest() on instance nishantSelenium.tests.SubmitOrderEcomTest@23941fb4 depends on not successfully finished methods 
-[nishantSelenium.tests.SubmitOrderEcomTest.submitOrder() on instance nishantSelenium.tests.SubmitOrderEcomTest@23941fb4]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})">
+                  </a> <!-- submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -278,16 +187,16 @@ Session ID: 25de4697-128b-403c-a77e-d58f7a771239
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;nishantSelenium.testComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;SubmitOrderTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SubmitOrderTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;nishantSelenium.tests.SubmitOrderEcomTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SubmitOrderTest --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidationTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ErrorValidationTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;nishantSelenium.tests.ErrorCredentialValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -352,24 +261,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'nishantSelenium.tests.SubmitOrderEcomTest')
-data.setCell(0, 3, 2455);
+data.setCell(0, 3, 11000);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ProductErrorValidationCartPage')
 data.setCell(1, 2, 'nishantSelenium.tests.ErrorCredentialValidationTest')
-data.setCell(1, 3, 2060);
+data.setCell(1, 3, 7431);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginErrorValidation')
-data.setCell(2, 2, 'nishantSelenium.tests.ErrorCredentialValidationTest')
-data.setCell(2, 3, 877);
+data.setCell(2, 1, 'orderHistoryTest')
+data.setCell(2, 2, 'nishantSelenium.tests.SubmitOrderEcomTest')
+data.setCell(2, 3, 6988);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'orderHistoryTest')
-data.setCell(3, 2, 'nishantSelenium.tests.SubmitOrderEcomTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'LoginErrorValidation')
+data.setCell(3, 2, 'nishantSelenium.tests.ErrorCredentialValidationTest')
+data.setCell(3, 3, 716);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -395,60 +304,57 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">nishantSelenium.tests.ErrorCredentialValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">nishantSelenium.tests.SubmitOrderEcomTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nishantSelenium.tests.SubmitOrderEcomTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">73 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">submitOrder({targetProductName=ZARA COAT 3, userPassword=Test112233, userEmail=nkrforever13@gmail.com})</span>
-                <span class="method-start">5051 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nishantSelenium.tests.ErrorCredentialValidationTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginErrorValidation</span>
-                <span class="method-start">5525 ms</span>
+                <span class="method-start">3387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6625 ms</span>
+                <span class="method-start">14391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">6987 ms</span>
+                <span class="method-start">14758 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nishantSelenium.tests.SubmitOrderEcomTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">orderHistoryTest</span>
+                <span class="method-start">19567 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7629 ms</span>
+                <span class="method-start">26556 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nishantSelenium.tests.ErrorCredentialValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">27027 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ProductErrorValidationCartPage</span>
-                <span class="method-start">14661 ms</span>
+                <span class="method-name">LoginErrorValidation</span>
+                <span class="method-start">30946 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16835 ms</span>
+                <span class="method-start">31663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">32044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ProductErrorValidationCartPage</span>
+                <span class="method-start">39496 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46928 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
