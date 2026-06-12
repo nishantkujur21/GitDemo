@@ -28,7 +28,24 @@ public void mobileAutomation(){
 		System.out.println("Mobile Testing");
 		
 	}
+
+public void qaArchitect1(){
 	
+	System.out.println("Test1");
+	
+}
+
+public void qaArchitect2(){
+	
+	System.out.println("Test2");
+	
+}
+
+public void qaArchitect3(){
+	
+	System.out.println("Test3");
+	
+}
 	
 	
 	public static void main(String[] args) {
